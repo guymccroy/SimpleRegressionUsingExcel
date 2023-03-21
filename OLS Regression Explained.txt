@@ -1,0 +1,100 @@
+Hello, this is jsut some useful information as to what this excel document
+is and why it is even valued as a project for your reference. 
+
+Regression Analysis is a type of statistical analysis. Regression can be 
+performed in numerous programs such as R, or Python, but is very easily 
+performed in Excel as well. 
+
+Regression Analysis describes the relationships between a number of 
+Independent/Predictor Variables and the Dependent/Predicted Variable. 
+It produces an equation where Coefficints represent the relationship 
+between each Predictor Variable and the Predicted Variable. You can use 
+the equations to make predictions. 
+
+Excel performs what Data Analysts would call Ordinary Least Squares or 
+OLS Regression. OLS estimates the parameters in a regression model by minimizing
+the sum of the squared residuals. It draws a line through the data points 
+that minimizes the sum of the squared differences between the observed values
+and the fitted values. 
+
+The button to perform regression analysis in Excel is located under the 
+Data Tab. There you should have an option for Data Analysis. From there 
+you can select Regression and perform the necessary steps. 
+
+If it isn't located in your version of Excel, you'll need to download the 
+Data Analysis ToolPak in Excel first. 
+
+This is found under File -> Options -> Add-Ins. On the Manage drop down list, 
+select Excel Add-ins, then select Go. On the popup that appears, select
+Analysis ToolPak and slect OK. Now you are ready to go. 
+
+In Regression Analysis, performing OLS Regression is very easy. Interpreting 
+the information is the hard part. In this project, the Regression is analyzing
+the effects of Predictor Variables such as Square Footage, Number of
+Bathrooms, and binary variables such as 1 for Good School DIstrict and 
+0 for Unfavorable School District on the Predicted Variable Sale Price.   
+
+So for the summary: 
+Multiple R is not a standard for measuring regression, so just skip that for 
+now. 
+
+The R-Squared value here is 91.62%, these numbers here are measured in 
+percentages by the way. This means the model we used here accounts for 
+91.62% of the Predicted Variable's variance. Typically, the higher the 
+R-Squared value, the better, but it is worth noting that this is not always
+true, it's just typically true and that is not a big concern regarding 
+this project. 
+
+The Standard Error of the regression indicates the average size of the residuals. 
+This stat shows how wrong the regression model is on average. The lower the 
+value, the better, because it signifies the distances between the data points
+and the fitted values are smaller. This value uses the measurement units of the 
+Predicted Variable. 
+
+In the ANOVA table, the most important stat is Signifigance F. This is the 
+P-Value for the F-test of overall signifigance. This test, determines 
+wether your model with all of its data, does a better job explaining the
+Predicted Variable's variability than a model with no independent variables. 
+Ouch. If this test is statistically signifigant, then it suggests you have 
+a model with worthwhile information. 
+
+The P-Value is written in scientific notation because it is a very small number. 
+As a rule of thumb, a P-Value less than 0.05 is good. This means the model 
+fits the data well. For more on that, I recommend looking up P-Values on 
+YouTube. I recommend the videos from StatQuest, which are excellent. 
+https://www.youtube.com/watch?v=vemZtEM63GY
+
+The Coefficients table shows us the parameter estimates for the Predictor 
+Variables in our model along with the Y-Intercept or Constant value. In 
+our table, observe # of Bathrooms. The Coefficient for # of Bathrooms 
+suggests that for every 1 unit increase in bathrooms, the Sale Price of a
+house goes up by $31,225 dollars. Remind you, the Sale Price of homes was
+measured in Thousands of Dollars. If the number of the Coefficient is 
+positive, then as the number of bathrooms goes up, so does the sale price of
+the houses.
+
+Lastly, the P-Values for the Coefficients indicate whether the Predictor Variable
+is statistically signifigant. When the P-Value is less than your signifigance 
+level, you can reject the null hypothesis that the coefficinet equals zero. 
+Keep in mind though that our Regression model as a whole is statistically 
+signifigant because our Signifigance F stat is well below 0.05.
+
+That's pretty much all we needed to know for now. There are some caveats of
+course. The model could likely be improved by adding more Predictor Variables
+because we need to keep in mind, our model is only as good as our assumptions
+regarding the model and its place in reality. This model does not account 
+for crime, traffic, poluttion, green spaces, walkability, bike lanes, and many
+many more things that the model could benefit from with their inclusion. 
+
+Lastly, Lastly, normally I wouldn't do OLS Regression analysis on a small 
+dataset like this, but it makes it easier to get the point across. It's
+important to have a large amount of observations in order to ensure the 
+dataset is statistically signifigant.
+
+
+
+
+
+
+
+
